@@ -21,7 +21,7 @@ export default function App() {
     <div className="app">
       <h1>DND Turn Tracker</h1>
       <ul className="container">
-        <li className={actionDone && "done"}>
+        <li className={actionDone ? "done" : undefined}>
           <span className="left">Action</span>
           <span className="right">
             <button disabled={actionDone} onClick={() => setActionDone(true)}>
@@ -29,7 +29,7 @@ export default function App() {
             </button>
           </span>
         </li>
-        <li className={bonusActionDone && "done"}>
+        <li className={bonusActionDone ? "done" : undefined}>
           <span className="left">Bonus Action</span>
           <span className="right">
             <button
@@ -40,7 +40,7 @@ export default function App() {
             </button>
           </span>
         </li>
-        <li className={interactWithObjectDone && "done"}>
+        <li className={interactWithObjectDone ? "done" : undefined}>
           <span className="left">Interact with Object</span>
           <span className="right">
             <button
@@ -51,7 +51,7 @@ export default function App() {
             </button>
           </span>
         </li>
-        <li className={reactionDone && "done"}>
+        <li className={reactionDone ? "done" : undefined}>
           <span className="left">Reaction</span>
           <span className="right">
             <button
@@ -62,7 +62,7 @@ export default function App() {
             </button>
           </span>
         </li>
-        <li className={moveDone && "done"}>
+        <li className={moveDone ? "done" : undefined}>
           <span className="left">Move</span>
           <span className="right">
             <button disabled={moveDone} onClick={() => setMoveDone(true)}>
