@@ -1,0 +1,35 @@
+.app {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.container {
+  padding-left: 0;
+  list-style: none;
+
+  li {
+    display: flex;
+    margin-bottom: 12px;
+
+    &.done {
+      opacity: .2;
+    }
+
+    .left, .right {
+      flex: 1 1 50%;
+      margin: 0 12px;
+    }
+
+    .left {
+      text-align: right;
+    }
+
+    .right {
+      text-align: left;
+    }
+  }
+}
+
+.finish-turn {
+  margin-top: 32px;
+}
